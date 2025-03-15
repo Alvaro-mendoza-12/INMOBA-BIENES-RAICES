@@ -1,0 +1,241 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    background: rgba(0, 0, 0, 0.5) url('/imagenes/CORREGIDO_page-0001.jpg') no-repeat ;
+    background-size: cover;
+    
+}
+span{
+    font-size: 25px;
+    text-shadow: 0 0 15px #0007;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(#950, #d90);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #809c9f;
+    white-space: nowrap; /* Prevenir el desbordamiento del texto */
+}
+
+.nav-links a.active {
+    color: #ff2e2e;
+}
+
+.nav-links a:hover {
+    background-color: #4d6a6f;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Estilos adaptables */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 15px 0; /* Añadir margen de 15px entre opciones */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+/* INICIO DE LAS PREGUNTAS RELACIONADO ALA SECCION DE TECHO PROPIO */
+
+.container {
+    width: 80%;
+    margin: 30px  auto;
+    /* background: #fff; */
+    padding: 20px;
+    /* box-shadow: 0 0 15px #0005; */
+    border-radius: 15px;
+    background-color: #beda;
+} 
+.container   p {
+    color: #000;
+    font-weight: bold;
+}
+.container li{
+    padding: 10px ;
+    color: #000;
+    font-weight: bold;
+
+}
+.container:hover{
+    box-shadow: 0 0 20px #0009;
+}
+.container a{
+    font-size: 20px;
+} 
+
+/* FIN DE LAS PREGUNTAS RELACINADAS ALA SECCION DE TECHO PROPIO */
+
+/*INICIO CUADRO DE PROYECTOS */
+
+.container1 {
+    max-width: 800px;
+    /* background-color: #fff; */
+    background-color: #beda;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 60px; /* Ajusta esto según la altura de tu barra de navegación */
+    padding: 20px;
+    text-align: center;
+    margin:15px auto;
+}
+.info-box h1 {
+    color: #13f;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.info-box h2 {
+    color: #333;
+    margin: 20px 0 10px;
+}
+
+.info-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    color: #555;
+    text-align: left;
+}
+
+.info-box ul li {
+    margin: 5px 0;
+}
+
+.video-container1 {
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+/* FIN DE CUADRO DE PROYECTO */
+/* inicio del foter */
+.footer {
+    background-color: #323232;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 150px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-text p {
+    margin: 5px 0;
+}
+
+.footer-text a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 40px; /* Ajusta el tamaño del ícono de WhatsApp */
+    height: auto;
+    margin: 0 10px;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 0;
+    }
+
+    .footer-text {
+        text-align: right;
+        font-size: 16px;
+    }
+
+    .footer-social {
+        margin-top: 0;
+    }
+}
+
+  /* fin del footer */

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INMOBA BIENES RAÍCES</title>
+    <link rel="stylesheet" href="proyectos.css">
+    <link rel="shortcut icon" href="/imagenes/logo coregido.jpeg" type="image/x-icon">
+    <meta name="keywords"
+    content="lotes,venta, venta de lotes, precio de domiciolios, domiciolios en chiclayo , lotes en chiclayo, chiclayo , INMOBA BIENES RAÍCES, donde venden lotes en chiclayo, terrenos, venta de terrenos, techo propio, veneficios del techo propio, casas, casas en chiclayo, condominios, universidades">
+<meta name="description" content=" esta pagina es sobre venta de lotes y terrenos para todo el publico">
+<meta name="author" content="Alvaro Mendoza Marin">
+<meta name="OG:title" content="INMOBA BIENES RAÍCES">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/imagenes/logo coregido.jpeg" alt="Logo">
+            <span>INMOBA BIENES RAÍCES</span>
+        </div>
+        <div class="hamburger" id="hamburger">
+            &#9776;
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="/index.html" class="nav-link">INICIO</a></li>
+            <li><a href="/TECHO PROPIO/techopropio.html" class="nav-link">VIVIENDAS CON TECHO PROPIO</a></li>
+            <li><a href="/LOTES URBANOS EXCLUSIVOS/lotes.html" class="nav-link">LOTES URBANOS EXCLUSIVOS</a></li>
+            <!-- <li><a href="/PROYECTOS/proyectos.html" class="nav-link">PROYECTOS DE INVERSION</a></li> -->
+            <li><a href="/vicion/VICION.HTML" class="nav-link">VISION / MISION</a></li>
+        </ul>
+    </nav>
+    <!-- FIN DE LA NAVEGACION -->
+    <!-- INICIO DE LOS PROYECTOS -->
+    <div class="box">
+        <div class="box2">
+            <h2>COSTA NUEVA☀ 🏚️
+            </h2>
+            <h3>Está Ubicada a 4 minutos del 3er Malecón de Pimentel, frente al Club la Bombonera y cerca a hospitales;
+                colegios y universidades. </h3>
+            <h2>Ofrece:</h2>
+            <ul>
+                <li>♻️ Pórtico de ingreso. </li>
+                <li>♻️ Alameda de árboles.</li>
+                <li>♻️Área de parrillas.</li>
+                <li>♻️ Avenidas afirmadas.</li>
+            </ul>
+            <P>Contamos con lotes desde 90 a 247 m2, a precios increíbles para inversion y alta Plusvalía!</P>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="/imagenes/poryectos.jpeg" alt="Lote 1">
+                    <img src="/imagenes/proyectos1.jpeg" alt="Lote 2">
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+            <div class="pdf-container">
+                <h2>PLANO DE COSTA NUEVA</h2>
+                <div class="pdf-embed">
+                    <embed src="/imagenes/costa nueva.pdf" type="application/pdf" width="100%" height="600px">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- FIN DE LOS PROYECTOS -->
+    <!-- INICIO DEL FUTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="/imagenes/logo coregido.jpeg" alt="Logo" class="footer-logo">
+            <div class="footer-text">
+                <p>© 2024 INMOBA BIENES RAÍCES. Todos los derechos reservados por el Autor de la pagina</p>
+            <p>contactanos a traves del siguiente numero: 970112600</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://wa.me/c/51970112600" target="_blank">
+                    <img src="/imagenes/whatsapp.png" alt="WhatsApp" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN DEL FUTER -->
+
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.carousel-images img');
+        const totalImages = images.length;
+
+        function changeSlide(direction) {
+            currentIndex = (currentIndex + direction + totalImages) % totalImages;
+            const offset = -currentIndex * 100;
+            document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+        }
+
+        // Optional: automatic slide
+        setInterval(() => {
+            changeSlide(1);
+        }, 3000); // Change image every 3 seconds
+    </script>
+    <script src="/javascrit/script.js"></script>
+</body>
+
+</html>

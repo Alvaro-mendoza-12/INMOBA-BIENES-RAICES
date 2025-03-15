@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INMOBA BIENES RAÍCES</title>
+    <link rel="stylesheet" href="lotes.css">
+    <link rel="shortcut icon" href="/imagenes/logo coregido.jpeg" type="image/x-icon">
+    <meta name="keywords"
+    content="lotes,venta, venta de lotes, precio de domiciolios, domiciolios en chiclayo , lotes en chiclayo, chiclayo , INMOBA BIENES RAÍCES, donde venden lotes en chiclayo, terrenos, venta de terrenos, techo propio, veneficios del techo propio, casas, casas en chiclayo, condominios, universidades">
+<meta name="description" content=" esta pagina es sobre venta de lotes y terrenos para todo el publico">
+<meta name="author" content="Alvaro Mendoza Marin">
+<meta name="OG:title" content="INMOBA BIENES RAÍCES">
+</head>
+
+<body>
+    <!-- INICO DE LA NAVEGACION -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/imagenes/logo coregido.jpeg" alt="Logo">
+            <span>INMOBA BIENES RAÍCES</span>
+        </div>
+        <div class="hamburger" id="hamburger">
+            &#9776;
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="/index.html" class="nav-link">INICIO</a></li>
+            <li><a href="/TECHO PROPIO/techopropio.html" class="nav-link">VIVIENDAS CON TECHO PROPIO</a></li>
+            <li><a href="/LOTES URBANOS EXCLUSIVOS/lotes.html" class="nav-link">LOTES URBANOS EXCLUSIVOS</a></li>
+            <!-- <li><a href="/PROYECTOS/proyectos.html" class="nav-link">PROYECTOS DE INVERSION</a></li> -->
+            <li><a href="/vicion/VICION.HTML" class="nav-link">VISION / MISION</a></li>
+            <!-- <li><a href="../mision.html" class="nav-link">VICION</a></li> -->
+        </ul>
+    </nav>
+    <!-- FIN DE LA NAVEGACION -->
+
+    <!-- INICIO DE LOTES -->
+
+
+    <div class="container">
+        <div class="info-box">
+            <h1>EL CONDOMINIO SOFIA ISABEL🏠</h1>
+            <p>EL Condominio más grande de Pimentel, <br>Ubicado a 3 minutos de la playa y rodeado de las mejores
+                urbanizaciones.</p>
+            <h2>ENTREGAMOS</h2>
+            <ul>
+                <li>🏢 Salón de Recepciones</li>
+                <li>🥅 Canchas Deportivas</li>
+                <li>🤸‍♀️ Gimnasio al aire libre</li>
+                <li>👙 2 Piscinas Olímpicas</li>
+            </ul>
+            <h2>Además:</h2>
+            <ul>
+                <li>💡 Servicios de Primera necesidad: Agua, Desagüe y luz</li>
+                <li>🚧 Cerco Perimétrico de Concreto y cerco vivo</li>
+                <li>⛩️ Pórtico de Ingreso</li>
+                <li>⏮️ Pistas asfaltadas y veredas</li>
+                <li>🌳 Alameda</li>
+                <li>🌾 Huerto Orgánico</li>
+                <li>🎢 Parques con juegos para niños</li>
+                <li>🔹️ Drenaje Pluvial</li>
+            </ul>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="/imagenes/CARUSEL.jpeg" alt="Lote 1">
+                    <img src="/imagenes/CARUSEL1.jpeg" alt="Lote 2">
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+            <div class="video-container">
+                <video controls>
+                    <source src="/imagenes/VIDEO DEVAJO DEL CARUSEL.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+            <div class="pdf-container">
+                <h2>PLANO DEL CONDOMINIO SOFIA ISABEL</h2>
+                <div class="pdf-embed">
+                    <embed src="/imagenes/SOFIA ISAVER.pdf" type="application/pdf" width="100%" height="600px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN DE INICIO DE LOTES -->
+
+    <!-- CODIGO JAVA SCRIP  -->
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.carousel-images img');
+        const totalImages = images.length;
+
+        function changeSlide(direction) {
+            currentIndex = (currentIndex + direction + totalImages) % totalImages;
+            const offset = -currentIndex * 100;
+            document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+        }
+
+        // Optional: automatic slide
+        setInterval(() => {
+            changeSlide(1);
+        }, 3000); // Change image every 3 seconds
+    </script>
+    <!-- INICIO DEL FUTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="/imagenes/logo coregido.jpeg" alt="Logo" class="footer-logo">
+            <div class="footer-text">
+                <p>© 2024 INMOBA BIENES RAÍCES. Todos los derechos reservados por el Autor de la pagina</p>
+                <p>contactanos a traves del siguiente numero: 970112600</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://wa.me/c/51970112600" target="_blank">
+                    <img src="/imagenes/whatsapp.png" alt="WhatsApp" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN DEL FUTER -->
+
+    <script src="/javascrit/script.js"></script>
+    <!-- FIN DE CODIGO JAVA SCRIPT -->
+</body>
+
+</html>
